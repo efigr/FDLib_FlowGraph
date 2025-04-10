@@ -295,7 +295,7 @@ protected:
 public:
 	virtual void PostLoad() override;
 	
-	void SetGraphNode(UEdGraphNode* NewGraphNode);
+	virtual void SetGraphNode(UEdGraphNode* NewGraphNode);
 	UEdGraphNode* GetGraphNode() const { return GraphNode; }
 
 	// Set up UFlowNodeBase when being opened for edit in the editor
