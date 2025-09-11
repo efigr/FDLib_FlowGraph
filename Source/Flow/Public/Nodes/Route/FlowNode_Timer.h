@@ -49,13 +49,13 @@ protected:
 	virtual void Restart();
 
 	float ResolveCompletionTime() const;
+
+	UFUNCTION()
+	virtual void OnCompletion();
 	
 private:
 	UFUNCTION()
 	void OnStep();
-
-	UFUNCTION()
-	void OnCompletion();
 
 protected:
 	virtual void Cleanup() override;
